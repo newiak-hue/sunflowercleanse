@@ -1,0 +1,91 @@
+.carousel-item h5, .carousel-item h3{
+  color: rgb(255, 255, 255);
+  font-style: bold;
+}
+@keyframes dropDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.card {
+  opacity: 0;
+  animation: dropDown 0.5s ease-out forwards;
+  background-color: #fce7c8;
+}
+
+.card-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.card-content.card-hover {
+  transform: translateY(-10px);
+}
+.service-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.service-title {
+  text-align: center;
+  color: #fa9a7c;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.service-card.selected {
+  border: 2px solid #ff9d7f;
+  background-color: #ffece6;
+}
+.service-card .service-info h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.service-card .service-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+.service-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.service-radio.selected {
+  border-color: #ff7043;
+  background-color: #ff7043;
+}
+.date-time-picker {
+  margin-top: 30px;
+}
+.card.mb-3.animate-drop{
+  background-color: #fff9f0;
+}
